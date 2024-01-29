@@ -21,7 +21,7 @@ function App() {
   }, [added]);
 
   const showTasks = () =>{
-    fetch("http://localhost:9000/api/getTask")
+    fetch("https://cloudy-pear-lemur.cyclic.app/api/getTask")
       .then((res) => res.json())
       .then((data) => {setMessage(data); console.log(data);});
   }
@@ -33,7 +33,7 @@ function App() {
 
   const deleteTask = (e) => {
     console.log(e.target.id);
-    fetch("http://localhost:9000/api/deleteTask", {
+    fetch("https://cloudy-pear-lemur.cyclic.app/api/deleteTask", {
       method: "POST", 
       mode: "cors",
       headers: {
@@ -50,7 +50,7 @@ function App() {
 
   const addTask =(e) => {
     
-    fetch("http://localhost:9000/api/addTask", {
+    fetch("https://cloudy-pear-lemur.cyclic.app/api/addTask", {
       method: "POST", 
       mode: "cors",
       headers: {
