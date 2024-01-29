@@ -1,0 +1,11 @@
+{
+    "name": "ToDo",
+    "version": "1.0.0",
+    "description": "ToDo",
+    "manifest_version": 3,
+    "author": "Miraculine",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Animal Manager"
+    }
+}
